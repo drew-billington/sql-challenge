@@ -1,0 +1,36 @@
+# Database Diagram for SQL Mod 9 Challenge
+
+employees
+-
+emp_no INT PK
+emp_title_id VARCHAR
+birth_date DATE
+first_name VARCHAR
+last_name VARCHAR
+sex VARCHAR
+hire_date DATE
+
+salaries
+-
+emp_no INT PK FK >- employees.emp_no
+salary INT
+
+titles
+-
+title_id VARCHAR PK FK >- employees.emp_title_id
+title VARCHAR
+
+departments
+-
+dept_no VARCHAR PK FK >- dept_emp.dept_no
+dept_name VARCHAR
+
+dept_emp
+- 
+emp_no INT PK FK >- employees.emp_no
+dept_no VARCHAR 
+
+dept_manager
+-
+emp_no INT PK FK >- employees.emp_no
+dept_no VARCHAR FK >- departments.dept_no
