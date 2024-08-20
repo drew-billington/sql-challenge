@@ -1,7 +1,7 @@
 # sql-challenge
 Module 9 Challenge - SQL
 
-Assistance via class materials & Speed Runs for Module 9 SQL
+Assistance via class materials, Speed Runs, and starter files for Module 9 SQL
 
 Additional assistance via Stack Overflow:
 
